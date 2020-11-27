@@ -20,19 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d94ae2f8-998f-4c55-a66d-f288af5fa15f" name="Default Changelist" comment="nyyyy&#10;&#10;# Conflicts:&#10;#&#9;bot.py&#10;#&#9;cheker.py&#10;#&#9;db.py">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/bot_parser.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cheker.py" beforeDir="false" afterPath="$PROJECT_DIR$/cheker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database1.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download.py" beforeDir="false" afterPath="$PROJECT_DIR$/download.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_creat.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +33,7 @@
   </component>
   <component name="JupyterTrust" id="de3536db-d3c3-4514-9ddb-a2fd71be37b7" />
   <component name="ProjectId" id="1kguKKx5mvwsdPCOGpgr6rwurRq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,6 +60,7 @@
       <workItem from="1606134491794" duration="87000" />
       <workItem from="1606216599154" duration="2008000" />
       <workItem from="1606308452032" duration="47000" />
+      <workItem from="1606411860740" duration="7000" />
     </task>
     <servers />
   </component>
