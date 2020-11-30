@@ -4,6 +4,7 @@ from pyrogram.errors import FloodWait
 from time import sleep
 
 from parser0 import parser_link
+#from download import download
 
 import time
 import os
@@ -60,15 +61,18 @@ def code2(app, msg):
 	while True:
 		global result_url
 		global result_urls
-		time.sleep(2)
-		print("2")
-		print(result_url)
+
+		time.sleep(60)
+
+		print("2\n")
 
 		if result_url != result_urls[len(result_urls) - 1]:
 			result_urls.append(result_url)
-			result_url = DOMEN = result_url
-			app.send_message('me', result_url)
+			result_url_print = DOMEN + result_url
+			app.send_message('me', result_url_print)
+			print(result_url_print)
+			print("проверка_")
 
-
+print('принт работат бота')
 
 app.run()
