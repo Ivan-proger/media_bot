@@ -4,19 +4,19 @@ from pyrogram.errors import FloodWait
 from time import sleep
 
 from parser0 import parser_link
-#from download import download
+from download import Download
 
 import time
 import os
 
-global result_url
 global result_urls
+global parser
 
 app = Client("media")
 parser = parser_link()
 result_urls = parser.result_urls
-result_url = parser.result_url0
 DOMEN = parser.DOMEN
+i_vid = 1
 
 @app.on_message(filters.command("type", prefixes=".") & filters.me)
 def type(_, msg):
@@ -53,25 +53,39 @@ def code1(app, msg):
 	finally:
 		files = os.listdir(path=os.getcwd())
 		file = files[0]
-		video = open(file)
-		app.send_video("test_api_bott", file)
+		app.send_video("me", file)
 
 @app.on_message(filters.command("while", prefixes="."))
 def code2(app, msg):
 	while True:
-		global result_url
 		global result_urls
+		global parser
 
-		time.sleep(60)
-
-		print("2\n")
+		result_url = parser.result_url0
 
 		if result_url != result_urls[len(result_urls) - 1]:
 			result_urls.append(result_url)
 			result_url_print = DOMEN + result_url
-			app.send_message('me', result_url_print)
-			print(result_url_print)
-			print("проверка_")
+			print('первое начола')
+			down = Download()
+			down.inf0(result_url_print)
+			i_vid = down.res
+
+			try:
+				my_dir = os.getcwd()
+				j0in = os.path.join(my_dir, 'media')
+				os.chdir(j0in)
+			except FileNotFoundError:
+				pass
+
+			print(os.getcwd())
+			d = down.video_download(result_url_print, i_vid)
+			files = os.listdir(path=os.getcwd())
+			
+			app.send_video("me", i_vid + ".mp4")
+
+
+		time.sleep(60)
 
 print('принт работат бота')
 
