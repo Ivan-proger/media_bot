@@ -9,8 +9,6 @@ from download import Download
 import time
 import os
 
-global result_urls
-global parser
 
 app = Client("media")
 parser = parser_link()
@@ -23,7 +21,7 @@ def type(_, msg):
 	orig_text = msg.text.split(".type ", maxsplit=1)[1]
 	text = orig_text
 	tbp = ""
-	typing_symbol = "}"
+	typing_symbol = "▓"
 
 	while(tbp != orig_text):
 		try:
@@ -58,15 +56,11 @@ def code1(app, msg):
 @app.on_message(filters.command("while", prefixes="."))
 def code2(app, msg):
 	while True:
-		global result_urls
-		global parser
-
 		result_url = parser.result_url0
-
 		if result_url != result_urls[len(result_urls) - 1]:
 			result_urls.append(result_url)
 			result_url_print = DOMEN + result_url
-			print('первое начола')
+
 			down = Download()
 			down.inf0(result_url_print)
 			i_vid = down.res
@@ -78,15 +72,9 @@ def code2(app, msg):
 			except FileNotFoundError:
 				pass
 
-			print(os.getcwd())
-			d = down.video_download(result_url_print, i_vid)
-			files = os.listdir(path=os.getcwd())
-			
+			down.video_download(result_url_print, i_vid)	
 			app.send_video("me", i_vid + ".mp4")
 
 
 		time.sleep(60)
-
-print('принт работат бота')
-
 app.run()
