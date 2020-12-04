@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d94ae2f8-998f-4c55-a66d-f288af5fa15f" name="Default Changelist" comment="nyyyy&#10;&#10;# Conflicts:&#10;#&#9;bot.py&#10;#&#9;cheker.py&#10;#&#9;db.py">
-      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/download.py" beforeDir="false" afterPath="$PROJECT_DIR$/download.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media.session" beforeDir="false" afterPath="$PROJECT_DIR$/media.session" afterDir="false" />
-    </list>
+    <list default="true" id="d94ae2f8-998f-4c55-a66d-f288af5fa15f" name="Default Changelist" comment="nyyyy&#10;&#10;# Conflicts:&#10;#&#9;bot.py&#10;#&#9;cheker.py&#10;#&#9;db.py" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +59,7 @@
       <workItem from="1606308452032" duration="47000" />
       <workItem from="1606411860740" duration="7000" />
       <workItem from="1606997246321" duration="212000" />
+      <workItem from="1607101654693" duration="172000" />
     </task>
     <servers />
   </component>
