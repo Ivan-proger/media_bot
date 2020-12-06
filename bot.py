@@ -3,18 +3,22 @@ from pyrogram.errors import FloodWait
 
 from time import sleep
 
-from parser0 import parser_link
-from download import Download
+#from parser0 import parser_link
+#from download import Download
 
 import time
 import os
 
 
-app = Client("media")
-parser = parser_link()
-result_urls = parser.result_urls
-DOMEN = parser.DOMEN
-i_vid = 1
+app = Client(
+	'mood',
+	api_id=2297631,
+    api_hash="44c201618c3606df1a58012885311729"
+    )
+#parser = parser_link()
+#result_urls = parser.result_urls
+#DOMEN = parser.DOMEN
+#i_vid = 1
 
 @app.on_message(filters.command("type", prefixes=".") & filters.me)
 def type(_, msg):
