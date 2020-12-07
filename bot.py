@@ -10,8 +10,8 @@ import time
 import os
 
 api_id = 2297631
-api_hash = "44c201618c3606df1a58012885311729"
-bot_token = "1476611133:AAHHvxmKTElEIaWNRYGVNWEg47TsDhf0jX8"
+api_hash = "44c201618c3606df1a580128853"
+bot_token = "1476611133:AAHHvxmKTElEGVNWEg47TsDhf0jX8"
 
 app = Client(
 	'mood',
